@@ -1,8 +1,9 @@
+# user defined variables
 $top_folder = $HOME
 $user = $env:USERNAME
 $computer = $env:COMPUTERNAME.ToLower()
 $date = Get-Date -UFormat "%Y-%m-%d-%H-%M-%S"
-$backup_folder = "C:\backups\$computer-$user-$date"
+$backup_folder = "E:\backups\$computer-$user-$date"
 $backup_directories = 'Contacts', 'Desktop', 'Documents', 'Downloads', 'Favorites', 'Links', 'Music', 'Pictures',
     'Saved Games', 'Searches', 'Videos'
 
