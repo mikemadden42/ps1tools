@@ -1,8 +1,14 @@
 # Inspired by Windows PowerShell Cookbook - 2nd Edition - 20.11 Program: Get the MD5 or SHA1 Hash of a File
-$HashAlgorithm = "SHA256"
+
+param(
+    $file,
+
+    [ValidateSet("MD5", "SHA1", "SHA256", "SHA384", "SHA512")]
+    $HashAlgorithm = "MD5"
+)
+
 $hashType = [Type] "System.Security.Cryptography.$HashAlgorithm"
 $hasher = $hashType::Create()
-$file = "LICENSE-2.0.txt"
 $filename = (Resolve-Path $file).Path
 
 $inputStream = New-Object IO.StreamReader $filename
