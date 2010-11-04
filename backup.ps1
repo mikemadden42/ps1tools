@@ -1,3 +1,7 @@
+param(
+    $backup_drive ="E:"
+)
+
 # user defined variables
 $top_folder = $HOME
 $user = $env:USERNAME
@@ -5,7 +9,7 @@ $os = Get-WmiObject Win32_OperatingSystem | Select-Object Caption
 $caption = $os.Caption
 $computer = $env:COMPUTERNAME.ToLower()
 $date = Get-Date -UFormat "%Y-%m-%d-%H-%M-%S"
-$backup_folder = "E:\backups\$computer-$user-$date"
+$backup_folder = "$backup_drive\backups\$computer-$user-$date"
 if ($caption -Match "Windows 7")
 {
     $backup_directories = 'Contacts', 'Desktop', 'Documents', 'Downloads', 'Favorites', 'Links', 'Music', 'Pictures',
