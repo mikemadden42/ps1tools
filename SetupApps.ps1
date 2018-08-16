@@ -4,7 +4,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 choco install 7zip -y
 choco install ag -y
 choco install cmake -y
-choco install cmder -y
+# choco install cmder -y
 choco install curl -y
 choco install dependencywalker -y
 choco install etcher -y
@@ -14,7 +14,7 @@ choco install golang -y
 choco install googlechrome -y
 choco install hipchat -y
 choco install itunes -y
-choco install jdk8 -y
+# choco install jdk8 -y
 choco install mls-software-openssh -y
 choco install ninja -y
 choco install nmap -y
