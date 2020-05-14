@@ -16,12 +16,12 @@ $hashBytes = $hasher.ComputeHash($inputStream.BaseStream)
 $inputStream.Close()
 
 $builder = New-Object System.Text.StringBuilder
-$hashBytes | Foreach-Object { [void] $builder.Append($_.ToString("X2")) }
+$hashBytes | ForEach-Object { [void] $builder.Append($_.ToString("X2")) }
 
 $output = New-Object PsObject -Property @{
-    Path = ([IO.Path]::GetFileName($file));
+    Path          = ([IO.Path]::GetFileName($file));
     HashAlgorithm = $hashAlgorithm;
-    HashValue = $builder.ToString()
+    HashValue     = $builder.ToString()
 }
 
 Write-Host $output.HashValue.ToLower(), $output.Path

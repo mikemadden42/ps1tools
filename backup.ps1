@@ -1,5 +1,5 @@
 param(
-    $backup_drive ="E:"
+    $backup_drive = "E:"
 )
 
 # user defined variables
@@ -10,13 +10,11 @@ $caption = $os.Caption
 $computer = $env:COMPUTERNAME.ToLower()
 $date = Get-Date -UFormat "%Y-%m-%d-%H-%M-%S"
 $backup_folder = "$backup_drive\backups\$computer-$user-$date"
-if ($caption -Match "Windows 7")
-{
+if ($caption -Match "Windows 7") {
     $backup_directories = 'Contacts', 'Desktop', 'Documents', 'Downloads', 'Favorites', 'Links', 'Music', 'Pictures',
-        'Saved Games', 'Searches', 'Videos'
+    'Saved Games', 'Searches', 'Videos'
 }
-elseif ($caption -Match "XP Professional")
-{
+elseif ($caption -Match "XP Professional") {
     $backup_directories = 'Application Data', 'Desktop', 'Favorites', 'My Documents', 'Start Menu'
 }
 
@@ -24,8 +22,7 @@ Write-Host -BackgroundColor Black -Foregroundcolor Yellow "`nCreating backup for
 
 New-Item -ItemType directory -Path $backup_folder
 
-foreach ($directory in $backup_directories)
-{
+foreach ($directory in $backup_directories) {
     Write-Host -BackgroundColor Black -Foregroundcolor Yellow "`nBacking up $directory..."
     Copy-Item "$top_folder/$directory" -Destination $backup_folder -Recurse
 }
