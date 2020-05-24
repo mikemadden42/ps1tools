@@ -13,6 +13,7 @@ choco install git -y
 choco install golang -y
 choco install googlechrome -y
 choco install keepassxc -y
+choco install microsoft-windows-terminal -y
 choco install ninja -y
 choco install nmap -y
 choco install notepadplusplus -y
@@ -29,4 +30,4 @@ choco install winmerge -y
 choco install wireshark -y
 
 # Install packages all at once.
-choco install 7zip ag cmake curl dependencywalker git golang googlechrome keepassxc ninja nmap notepadplusplus putty python slack sysinternals visualstudio2019-workload-vctools visualstudio2019buildtools vscode wget windows-sdk-10.1 winmerge wireshark -y
+choco install 7zip ag cmake curl dependencywalker git golang googlechrome keepassxc microsoft-windows-terminal ninja nmap notepadplusplus putty python slack sysinternals visualstudio2019-workload-vctools visualstudio2019buildtools vscode wget windows-sdk-10.1 winmerge wireshark -y
