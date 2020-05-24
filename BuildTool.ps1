@@ -1,0 +1,1 @@
+Remove-Item -Recurse -Force build; mkdir build; Set-Location build; cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..; ninja
