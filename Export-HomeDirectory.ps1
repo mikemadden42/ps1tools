@@ -10,7 +10,7 @@ $caption = $os.Caption
 $computer = $env:COMPUTERNAME.ToLower()
 $date = Get-Date -UFormat "%Y-%m-%d-%H-%M-%S"
 $backup_folder = "$backup_drive\backups\$computer-$user-$date"
-if ($caption -match "Windows 7" -or $caption -match "Microsoft Windows 10 Pro" -or $caption -match "Microsoft Windows Server 2019 Datacenter") {
+if ($caption -match "Windows 7" -or $caption -match "Microsoft Windows 10 Pro") {
     $backup_directories = 'Contacts', 'Desktop', 'Documents', 'Downloads', 'Favorites', 'Links', 'Music', 'Pictures',
     'Saved Games', 'Searches', 'Videos', 'src'
 }
