@@ -12,7 +12,7 @@ $date = Get-Date -UFormat "%Y-%m-%d-%H-%M-%S"
 $backup_folder = "$backup_drive\backups\$computer-$user-$date"
 if ($caption -match "Windows 7" -or $caption -match "Microsoft Windows 10 Pro") {
     $backup_directories = 'Contacts', 'Desktop', 'Documents', 'Downloads', 'Favorites', 'Links', 'Music', 'Pictures',
-    'Saved Games', 'Searches', 'Videos', 'src'
+    'Saved Games', 'Searches', 'Videos', 'bin', 'src'
 }
 elseif ($caption -match "XP Professional") {
     $backup_directories = 'Application Data', 'Desktop', 'Favorites', 'My Documents', 'Start Menu'
