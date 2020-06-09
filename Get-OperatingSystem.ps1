@@ -9,10 +9,9 @@ elseif ($IsMacOS) {
 elseif ($IsWindows) {
     Write-Host "Windows"
 }
-
-if ($IsWindows -or $ENV:OS) {
+elseif ($ENV:OS) {
     Write-Host "Windows"
 }
 else {
-    Write-Host "Not Windows"
+    Write-Host "Not Linux, macOS, or Windows"
 }

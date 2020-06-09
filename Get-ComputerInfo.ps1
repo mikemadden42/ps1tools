@@ -1,5 +1,7 @@
 Get-Date -UFormat "%Y-%m-%d-%H-%M"
 
+$env:COMPUTERNAME
+$env:NUMBER_OF_PROCESSORS
 $PSVersionTable
 
 Get-WmiObject Win32_ComputerSystem
