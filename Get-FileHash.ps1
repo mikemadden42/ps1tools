@@ -24,4 +24,4 @@ $output = New-Object PsObject -Property @{
     HashValue     = $builder.ToString()
 }
 
-Write-Host $output.HashValue.ToLower(), $output.Path
+Write-Output $output.HashValue.ToLower(), $output.Path
