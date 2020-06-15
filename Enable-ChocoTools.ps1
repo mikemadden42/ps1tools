@@ -6,6 +6,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 # Install packages one at a time.
 choco install 7zip -y
 choco install ag -y
+choco install brave -y
 choco install cmake -y
 choco install curl -y
 choco install dependencywalker -y
@@ -30,4 +31,4 @@ choco install winmerge -y
 choco install wireshark -y
 
 # Install packages all at once.
-choco install 7zip ag cmake curl dependencywalker git golang googlechrome keepassxc microsoft-windows-terminal ninja nmap notepadplusplus putty python slack sysinternals visualstudio2019-workload-vctools visualstudio2019buildtools vscode wget windows-sdk-10.1 winmerge wireshark -y
+choco install 7zip ag brave cmake curl dependencywalker git golang googlechrome keepassxc microsoft-windows-terminal ninja nmap notepadplusplus putty python slack sysinternals visualstudio2019-workload-vctools visualstudio2019buildtools vscode wget windows-sdk-10.1 winmerge wireshark -y
