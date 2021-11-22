@@ -1,17 +1,17 @@
 # https://stackoverflow.com/questions/44703646/determine-the-os-version-linux-and-windows-from-powershell
 
 if ($IsLinux) {
-    Write-Output "Linux"
+    Write-Host "Linux"
 }
 elseif ($IsMacOS) {
-    Write-Output "macOS"
+    Write-Host "macOS"
 }
 elseif ($IsWindows) {
-    Write-Output "Windows"
+    Write-Host "Windows"
 }
 elseif ($ENV:OS) {
-    Write-Ouptut "Windows"
+    Write-Host "Windows"
 }
 else {
-    Write-Output "Not Linux, macOS, or Windows"
+    Write-Host "Not Linux, macOS, or Windows"
 }
