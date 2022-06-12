@@ -1,6 +1,5 @@
 Get-Date -UFormat "%Y-%m-%d-%H-%M"
 
-
 if ($IsWindows) {
     $env:COMPUTERNAME
     $env:NUMBER_OF_PROCESSORS
