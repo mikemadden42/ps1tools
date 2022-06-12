@@ -1,3 +1,8 @@
+if (-Not $IsWindows) {
+    Write-Host "This script only works on Windows."
+    Exit 1
+}
+
 param(
     $backup_drive = "E:"
 )
