@@ -1,4 +1,4 @@
-﻿if (Test-Path -Path $HOME\AppData\Local\NuGet\Cache -PathType Container) {
+if (Test-Path -Path $HOME\AppData\Local\NuGet\Cache -PathType Container) {
     Write-Host "Cleaning NuGet Cache"
     Remove-Item -Force -Recurse $HOME\AppData\Local\NuGet\Cache\*
 }

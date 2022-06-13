@@ -1,4 +1,4 @@
-﻿if (-Not $IsWindows) {
+if (-Not $IsWindows) {
     Write-Host "This script only works on Windows."
     Exit 1
 }
