@@ -1,1 +1,1 @@
-Get-ChildItem -path . | ForEach-Object { Write-Output $_.Name; & $_.Name "--version" }
+Get-ChildItem -Path . | ForEach-Object { Write-Output $_.Name; & $_.Name "--version" }

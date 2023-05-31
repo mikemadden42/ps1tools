@@ -42,4 +42,4 @@ choco install winmerge -y
 choco install wireshark -y
 
 # Install packages all at once.
-choco install 7zip ag bat brave bottom cmake curl dependencywalker fd git ghidra golang googlechrome keepassxc microsoft-windows-terminal ninja nmap notepadplusplus putty python ripgrep sd-cli slack sysinternals visualstudio2019-workload-vctools visualstudio2019buildtools vscode wget windows-sdk-10.1 winmerge wireshark 
+choco install 7zip ag bat brave bottom cmake curl dependencywalker fd git ghidra golang googlechrome keepassxc microsoft-windows-terminal ninja nmap notepadplusplus putty python ripgrep sd-cli slack sysinternals visualstudio2019-workload-vctools visualstudio2019buildtools vscode wget windows-sdk-10.1 winmerge wireshark

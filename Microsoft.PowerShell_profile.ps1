@@ -3,7 +3,7 @@ Push-Location "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Co
 cmd /c "VsDevCmd.bat -arch=amd64 &set" |
 ForEach-Object {
     if ($_ -match "=") {
-        $v = $_.split("="); Set-Item -Force -Path "ENV:\$($v[0])"  -Value "$($v[1])"
+        $v = $_.split("="); Set-Item -Force -Path "ENV:\$($v[0])" -Value "$($v[1])"
     }
 }
 Pop-Location

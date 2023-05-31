@@ -1,15 +1,22 @@
 Get-Date -UFormat "%Y-%m-%d-%H-%M"
 
+# https://powershell.org/2019/02/tips-for-writing-cross-platform-powershell-code/
+if ( -not (Get-Variable -Name isWIndows -ErrorAction SilentlyContinue) ) {
+    # We know we're on Windows PowerShell 5.1 or earlier
+    $IsWindows = $true
+    $IsLinux = $IsMacOS = $false
+}
+
 if ($IsWindows) {
-    $env:COMPUTERNAME
     $env:NUMBER_OF_PROCESSORS
+    $env:COMPUTERNAME
 }
 elseif ($IsMacOS) {
     sysctl -n hw.ncpu
     scutil --get LocalHostName
 }
 elseif ($IsLinux) {
-    nproc 
+    nproc
     hostname
 }
 

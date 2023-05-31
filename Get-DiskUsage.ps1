@@ -1,1 +1,1 @@
-Get-ChildItem -path . | ForEach-Object { Write-Output $_.Name; dust -b $_.Name }
+Get-ChildItem -Path . | ForEach-Object { Write-Output $_.Name; dust -b $_.Name }
